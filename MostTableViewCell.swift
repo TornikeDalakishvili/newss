@@ -9,6 +9,7 @@
 import UIKit
 
 class MostTableViewCell: UITableViewCell {
+    @IBOutlet weak var CellImageView2: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,7 +19,7 @@ class MostTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        
     }
 
 }

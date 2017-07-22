@@ -44,6 +44,9 @@
                                         <rect key="frame" x="328" y="15" width="47" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="search"/>
+                                        <connections>
+                                            <action selector="HistorySearch:" destination="PaP-f3-ClD" eventType="touchUpInside" id="9Rs-18-aRV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.33528257639514947" green="1" blue="0.98764295195461527" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -74,6 +77,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="CellImageView1" destination="vea-xu-4lq" id="gNX-ca-K22"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -81,6 +87,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="Jmc-2f-dX7"/>
+                    <connections>
+                        <outlet property="HistoryLogo" destination="mhN-6w-1fd" id="rpb-cn-zMo"/>
+                        <outlet property="HistoryTableView" destination="Mwd-1H-gX4" id="rL9-kQ-QGv"/>
+                        <outlet property="Historylbl" destination="sHJ-FM-G07" id="h6j-Xs-a3d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzj-XX-8P7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,6 +116,9 @@
                                         <rect key="frame" x="321" y="21" width="47" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="search"/>
+                                        <connections>
+                                            <action selector="NewsSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qd0-ND-bOg"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="logo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLW-fK-l1K">
                                         <rect key="frame" x="8" y="25" width="34" height="21"/>
@@ -140,6 +154,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="458"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6n-gI-csB">
+                                                    <rect key="frame" x="0.0" y="83" width="375" height="291"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0bn-P2-60P">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -168,19 +186,19 @@
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6n-gI-csB">
-                                                    <rect key="frame" x="0.0" y="90" width="375" height="291"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31a-lr-g6v">
                                                     <rect key="frame" x="0.0" y="389" width="375" height="61"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="1" green="0.9869998401137432" blue="0.95547509638331307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="CellImageView1" destination="A6n-gI-csB" id="SDM-vF-w8R"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -196,6 +214,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="topRated" id="Wzb-iB-1oi"/>
+                    <connections>
+                        <outlet property="NewsLbl" destination="3vC-Od-vkh" id="OfJ-Yh-sdF"/>
+                        <outlet property="NewsLogo" destination="LLW-fK-l1K" id="dLj-Fe-Lud"/>
+                        <outlet property="NewsTableView" destination="byd-f3-w45" id="z9z-AJ-Qus"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -259,11 +282,15 @@
                                                     <rect key="frame" x="0.0" y="310" width="375" height="61"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="1" green="0.98699984009999997" blue="0.95547509639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="CellImageView2" destination="yKI-q5-wlG" id="AAY-J2-rD9"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -282,6 +309,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BwR-NQ-Dea" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="0uG-oH-MQy">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
